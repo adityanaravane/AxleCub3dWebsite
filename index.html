@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Axle Cube</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity position="0 1.25 -5">
+        <a-box position="0 0 0" width="1" height="1" depth="1">
+          <a-entity
+            geometry="primitive: plane; width: 1; height: 1"
+            material="src: url(texture1.jpg)"
+            position="0 0 0.51"
+          ></a-entity>
+          <a-entity
+            geometry="primitive: plane; width: 1; height: 1"
+            material="src: url(texture2.jpg)"
+            rotation="0 90 0"
+            position="0.51 0 0"
+          ></a-entity>
+          <a-entity
+            geometry="primitive: plane; width: 1; height: 1"
+            material="src: url(texture3.jpg)"
+            rotation="0 180 0"
+            position="0 0 -0.51"
+          ></a-entity>
+          <a-entity
+            geometry="primitive: plane; width: 1; height: 1"
+            material="src: url(texture4.jpg)"
+            rotation="0 -90 0"
+            position="-0.51 0 0"
+          ></a-entity>
+          <a-entity
+            geometry="primitive: plane; width: 1; height: 1"
+            material="src: url(texture5.jpg)"
+            rotation="90 0 0"
+            position="0 0.51 0"
+          ></a-entity>
+          <a-entity
+            geometry="primitive: plane; width: 1; height: 1"
+            material="src: url(texture6.jpg)"
+            rotation="-90 0 0"
+            position="0 -0.51 0"
+          ></a-entity>
+        </a-box>
+      </a-entity>
+
+      
+      <a-light type="ambient" color="#888"></a-light>
+      <a-light type="directional" position="-1 1 1"></a-light>
+      <a-entity universal-controls="fly: true;
+         movementEasing: 15;
+         movementAcceleration: 80;"></a-entity>
+    </a-scene>
+  </body>
+</html>
